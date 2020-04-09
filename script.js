@@ -24,20 +24,20 @@ let food = {
 
 // Criando função para iniciar o background
 function criarBG(){
-    context.fillStyle = "lightgreen";  // Trabalha com o estilo
+    context.fillStyle = "#b0eacd";  // Trabalha com o estilo
     context.fillRect(0, 0, 16 * box, 16 * box); // Desenha o retângulo do jogo
 }
 
 
 function criarSnake(){
     for (i =0; i < snake.length; i++){
-        context.fillStyle = "green";
+        context.fillStyle = "#21bf73";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
 function drawFood(){
-    context.fillStyle = "red";
+    context.fillStyle = "#fd5e53";
     context.fillRect(food.x, food.y, box, box);
 }
 
